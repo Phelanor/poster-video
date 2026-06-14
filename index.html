@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f2;
+      background: linear-gradient(135deg, #f5f5f2, #e9eef3);
       color: #222;
       line-height: 1.6;
     }
@@ -28,15 +28,38 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #eef2f7;
+      color: #394150;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+
     h1 {
       font-size: 2rem;
       line-height: 1.2;
       margin-bottom: 8px;
     }
 
+    h2 {
+      margin-top: 32px;
+      font-size: 1.35rem;
+    }
+
     .subtitle {
       color: #666;
       margin-bottom: 24px;
+    }
+
+    .poster-image {
+      width: 100%;
+      border-radius: 18px;
+      margin: 24px 0;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
     }
 
     .video {
@@ -47,6 +70,7 @@
       border-radius: 18px;
       margin: 24px 0;
       background: #000;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
     }
 
     .video iframe {
@@ -58,21 +82,64 @@
       border: 0;
     }
 
-    .button {
-      display: inline-block;
+    .contact-section {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
       margin-top: 18px;
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: #222;
-      color: white;
+    }
+
+    .contact-card {
+      display: block;
+      padding: 18px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
       text-decoration: none;
+      color: #222;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-label {
+      font-size: 0.85rem;
+      color: #6b7280;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    .contact-value {
+      font-size: 1rem;
+      word-break: break-word;
     }
 
     .footer {
       margin-top: 28px;
       font-size: 0.9rem;
       color: #777;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
@@ -81,6 +148,8 @@
   <main class="page">
     <section class="card">
 
+      <div class="tag">Conference poster supplementary media</div>
+
       <h1>3D-Printed Dissolving Microneedle Patches</h1>
 
       <p class="subtitle">
@@ -88,9 +157,11 @@
       </p>
 
       <p>
-        Thank you for scanning my poster. This short video shows additional visual material related to my work on SLA-printed dissolving microneedle patches for intradermal drug delivery.
+        Thank you for scanning my poster. The video below shows a reconstructed visualisation of a CAPbaE microneedle patch using micro-computed tomography. You can also see an image of the same patch taken using an optical microscope.
       </p>
-
+      
+      <img src="CAPbaE_Arrow_Re-Web_top.tiff" alt="Grid-base microneedle patch image" class="poster-image">
+      
       <div class="video">
         <iframe
           src="https://www.youtube-nocookie.com/embed/tplm5UNZr4I"
@@ -105,12 +176,35 @@
         This video shows supplementary visual evidence related to the printed microneedle patches presented on the poster.
       </p>
 
-      <a class="button" href="mailto:krystian.lewandowski01@gmail.com">
-        Contact me
-      </a>
+      <section class="contact-section">
+        <h2>Contact</h2>
+
+        <p>
+          If you would like to discuss the work, collaborate, or ask questions about the poster, please feel free to get in touch.
+        </p>
+
+        <div class="contact-grid">
+
+          <a class="contact-card" href="mailto:krystian.lewandowski@nottingham.ac.uk">
+            <div class="contact-label">University email</div>
+            <div class="contact-value">krystian.lewandowski@nottingham.ac.uk</div>
+          </a>
+
+          <a class="contact-card" href="tel:+447803058068">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+44 7803 058068</div>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/krystianlewandowski" target="_blank" rel="noopener noreferrer">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/krystianlewandowski</div>
+          </a>
+
+        </div>
+      </section>
 
       <p class="footer">
-        Krystian Lewandowski · Conference poster supplementary video
+        Krystian Lewandowski · University of Nottingham
       </p>
 
     </section>
