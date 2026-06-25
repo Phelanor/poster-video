@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>3D-Printed Biodegradable Microneedles</title>
+  <title>3D-Printed Biodegradable Microneedles for Drug Delivery</title>
 
   <style>
     body {
@@ -42,7 +42,7 @@
     h1 {
       font-size: 2.25rem;
       line-height: 1.15;
-      margin: 0 0 10px;
+      margin: 0 0 24px;
     }
 
     h2 {
@@ -54,12 +54,6 @@
     h3 {
       margin: 0 0 8px;
       font-size: 1.05rem;
-    }
-
-    .subtitle {
-      color: #5f6b7a;
-      margin-bottom: 24px;
-      font-size: 1.08rem;
     }
 
     .intro {
@@ -100,7 +94,7 @@
 
     .highlight-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       gap: 14px;
       margin-top: 18px;
     }
@@ -110,18 +104,20 @@
       border: 1px solid #e5e7eb;
       border-radius: 18px;
       padding: 18px;
+      text-align: center;
     }
 
     .highlight-number {
-      font-size: 1.35rem;
+      font-size: 1.45rem;
       font-weight: bold;
       color: #1f2933;
       margin-bottom: 4px;
     }
 
-    .highlight-label {
-      color: #5f6b7a;
+    .highlight-card h3 {
       font-size: 0.95rem;
+      color: #5f6b7a;
+      margin: 0;
     }
 
     .image-grid {
@@ -247,24 +243,19 @@
 
       <h1>3D-Printed Biodegradable Microneedles for Drug Delivery</h1>
 
-      <p class="subtitle">
-        SLA-printed poly(β-amino ester)-based dissolving microneedle patches for intradermal delivery
-      </p>
-
       <p class="intro">
         My PhD research focuses on the development of stereolithography-printed dissolving microneedle patches using photocurable poly(β-amino ester)-based materials. The aim is to create biodegradable microneedle systems that can penetrate skin, dissolve after application, and potentially support the intradermal delivery of biologics such as nucleic acid-based therapies.
       </p>
 
       <div class="quick-links">
         <a class="quick-link" href="#visuals">Visual Snapshot</a>
-        <a class="quick-link" href="#highlights">Research Highlights</a>
+        <a class="quick-link" href="#highlights">Key Results</a>
         <a class="quick-link" href="#video">µCT Video</a>
-        <a class="quick-link" href="#about">About Me</a>
         <a class="quick-link" href="#contact">Contact</a>
       </div>
 
       <section id="visuals">
-        <h2>Visual Snapshot</h2>
+        <h2>Results Snapshot</h2>
 
         <p>
           This page provides a short visual overview of my work on CAPbaE dissolving microneedle patches, including optical microscopy, SEM imaging, and micro-computed tomography.
@@ -272,32 +263,32 @@
 
         <div class="visual-summary">
           <strong>Research focus:</strong>
-          developing printable, biodegradable microneedle patches with defined arrowhead geometries and stable grid-based patch structures using SLA additive manufacturing.
+          developing printable, biodegradable microneedle patches wusing stereolithography additive manufacturing to create an alternative drug delivery platform for biologics.
         </div>
 
         <div class="image-grid">
 
           <div class="figure-card">
+            <img src="arrowhead-comparison.jpg" alt="Arrowhead microneedle CAD and optical microscopy comparison" class="poster-image">
+            <h3>Optical comparison of print fidelity</h3>
+            <p class="caption">
+              (a) CAD design of the arrowhead microneedle. (b) Optical microscope image of the PbAE:ACMO:Irgacure819® formulation, showing overpolymerisation around the arrowhead geometry. (c) Optical microscope image of the CAPbaE(PbAE:ACMO:Curcumin:Irgacure819®), showing improved shape fidelity.
+            </p>
+          </div>
+
+          <div class="figure-card">
+            <img src="sem-microneedle.jpg" alt="SEM images of CAPbaE microneedle morphology" class="poster-image">
+            <h3>SEM morphology of printed microneedles</h3>
+            <p class="caption">
+              (a) SEM micrograph of an individual CAPbaE microneedle viewed at 45°(b) SEM top-view micrograph of an individual microneedle tip.
+            </p>
+          </div>
+
+          <div class="figure-card">
             <img src="capbae-patch.jpg" alt="Grid-base CAPbaE microneedle patch optical microscope image" class="poster-image">
             <h3>Grid-base CAPbaE microneedle patch</h3>
             <p class="caption">
-              Optical microscope image showing the printed patch array and grid-like base structure. The grid base was introduced to reduce warping compared with a solid monolithic base.
-            </p>
-          </div>
-
-          <div class="figure-card">
-            <img src="sem-microneedle.jpg" alt="SEM image of a CAPbaE microneedle" class="poster-image">
-            <h3>Printed microneedle morphology</h3>
-            <p class="caption">
-              SEM image showing the morphology of an individual printed CAPbaE microneedle, highlighting the surface structure and defined microneedle geometry.
-            </p>
-          </div>
-
-          <div class="figure-card">
-            <img src="arrowhead-comparison.jpg" alt="Arrowhead microneedle print fidelity comparison" class="poster-image">
-            <h3>Arrowhead geometry optimisation</h3>
-            <p class="caption">
-              Optical/CAD comparison showing how formulation optimisation improved the definition of the arrowhead microneedle geometry.
+              Optical microscope image of the CAPbaE dissolving microneedle patch with a grid-like base structure. The grid base was introduced to reduce warping compared with a solid monolithic base and to improve patch shape stability.
             </p>
           </div>
 
@@ -305,47 +296,40 @@
       </section>
 
       <section id="highlights">
-        <h2>Research Highlights</h2>
+        <h2>Key Results</h2>
 
         <div class="highlight-grid">
 
           <div class="highlight-card">
             <div class="highlight-number">&gt;50</div>
-            <h3>Formulations screened</h3>
-            <p class="highlight-label">
-              Photocurable formulations were screened for printability, mechanical performance, and dissolution behaviour.
-            </p>
+            <h3>formulations screened</h3>
           </div>
 
           <div class="highlight-card">
             <div class="highlight-number">CAPbaE</div>
-            <h3>Optimised resin system</h3>
-            <p class="highlight-label">
-              The selected system combined ACMO, PbAE, curcumin, and Irgacure819® for printable biodegradable microneedle patches.
-            </p>
+            <h3>optimised resin system</h3>
           </div>
 
           <div class="highlight-card">
             <div class="highlight-number">20 ± 2 µm</div>
-            <h3>Mean tip diameter</h3>
-            <p class="highlight-label">
-              Sharp arrowhead microneedle tips were achieved after optimisation of print fidelity and post-processing.
-            </p>
+            <h3>mean tip diameter</h3>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-number">730 µm</div>
+            <h3>maximum insertion depth</h3>
           </div>
 
           <div class="highlight-card">
             <div class="highlight-number">3 h</div>
-            <h3>Dissolution behaviour</h3>
-            <p class="highlight-label">
-              CAPbaE patches dissolved in water at 37 °C after approximately 3 hours.
-            </p>
+            <h3>dissolution at 37 °C</h3>
           </div>
 
         </div>
       </section>
 
       <section id="video">
-        <h2>Supplementary µCT Video</h2>
+        <h2>µCT Video</h2>
 
         <p>
           The video below shows a micro-computed tomography reconstruction of a CAPbaE microneedle patch, providing a three-dimensional view of the printed array and grid-based structure.
@@ -363,16 +347,8 @@
       <h2>Future Direction</h2>
 
       <p>
-        Future work will focus on cargo loading, release behaviour, biocompatibility, and more physiologically relevant skin insertion studies. These studies will help assess the potential of CAPbaE microneedle patches as a platform for biodegradable intradermal drug delivery.
+        Future work will focus on drug loading, biocompatibility, stability and skin insertion studies. These studies will help assess the potential of CAPbaE microneedle patches as a platform for biodegradable intradermal drug delivery.
       </p>
-
-      <section id="about">
-        <h2>About Me</h2>
-
-        <p>
-          I am a PhD researcher at the University of Nottingham working on 3D-printed dissolving microneedle patches for drug delivery. My research combines polymer formulation, stereolithography, microneedle design, mechanical testing, microscopy, and micro-computed tomography.
-        </p>
-      </section>
       
       <section class="contact-section" id="contact">
         <h2>Contact</h2>
@@ -385,12 +361,7 @@
 
           <a class="contact-card" href="mailto:paxkl5@nottingham.ac.uk">
             <div class="contact-label">University email</div>
-            <div class="contact-value">paxkl5@nottingham.ac.uk</div>
-          </a>
-
-          <a class="contact-card" href="tel:+447803058068">
-            <div class="contact-label">Phone</div>
-            <div class="contact-value">+44 7803 058068</div>
+            <div class="contact-value">krystian.lewandowski@nottingham.ac.uk</div>
           </a>
 
           <a class="contact-card" href="https://www.linkedin.com/in/krystianlewandowski" target="_blank" rel="noopener noreferrer">
@@ -402,7 +373,7 @@
       </section>
 
       <p class="footer">
-        Krystian Lewandowski · University of Nottingham
+        Krystian Lewandowski · Advanced Material and Healthcare Technologies · School of Pharmacy · University of Nottingham
       </p>
 
     </section>
